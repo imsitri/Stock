@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 
 export default defineConfig({
   site: 'https://imsitri.github.io/Stock',
-  base: '',
+  base: 'Stock',
   build: {
     assets: 'astro',
   }
