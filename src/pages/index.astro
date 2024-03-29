@@ -39,8 +39,7 @@
 		<script src="https://d3js.org/d3.v7.min.js"></script>
 		<script src="https://unpkg.com/d3-simple-slider"></script>
 
-		<script type = "module">
-			console.log("Script running")
+		<script type="module">
 			// Set dimensions and margins for the chart
 			const margin = { top: 70, right: 60, bottom: 50, left: 80 };
 			const width = 1600 - margin.left - margin.right;
@@ -96,7 +95,7 @@
 				.attr("stop-opacity", 0);
 
 			// Load and process the data
-			d3.csv("/Stock/NTDOY.csv").then((data) => {
+			d3.csv("Stock/NTDOY.csv").then((data) => {
 				// Parse the Date and convert the Close to a number
 				const parseDate = d3.timeParse("%Y-%m-%d");
 				data.forEach((d) => {
@@ -163,7 +162,7 @@
 					.style("fill", "url(#gradient)")
 					.style("opacity", 0.5);
 
-				// Add the line path.
+				// Add the line path
 				const path = svg
 					.append("path")
 					.datum(data)
@@ -206,7 +205,8 @@
 				const listeningRect = svg
 					.append("rect")
 					.attr("width", width)
-					.attr("height", height);
+					.attr("height", height)
+					.attr("opacity", 0);
 
 				// create the mouse move function
 
