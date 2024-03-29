@@ -1,2 +1,0 @@
-Suspended Sediment Discharge code: 80155
-COLORADO RIVER BELOW IMPERIAL DAM, AZ-CA: https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09429500&startDT=2021-01-10&endDT=2024-03-28&siteStatus=all&parameterCd=80155
