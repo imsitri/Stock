@@ -1,6 +1,7 @@
 {
 	"extends": "astro/tsconfigs/base",
 	"compilerOptions": {
-		"checkJs": false
+		"checkJs": false,
+		"esModuleInterop": true,
 	}
 }
